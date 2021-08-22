@@ -26,6 +26,7 @@ p{
 @media only screen and (max-width: 600px) {
     #popcat1 {
         width: 500px;
+        margin-top: -10%;
     }
     h1{
         font-size: 4.5em;

@@ -1,0 +1,33 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(to right, #ffefba, #ffffff);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 6.5em;
+    margin: 1% 0% -3% 0%;
+    font-family: Nunito, sans-serif;
+    -webkit-text-stroke: 2px black;
+    color: white;
+}
+p{
+    font-size: 4em;
+    font-family: Nunito, sans-serif;
+    -webkit-text-stroke: 2px black;
+    color: white;
+    margin-bottom: -4%;
+}
+@media only screen and (max-width: 600px) {
+    #popcat1 {
+        width: 400px;
+    }
+    h1{
+        font-size: 4.5em;
+    }
+}

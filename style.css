@@ -2,6 +2,8 @@ body {
     margin: 0%;
     padding: 0%;
     background: linear-gradient(to right, #ffefba, #ffffff);
+    overflow-y: hidden;
+    font-family: Nunito, sans-serif;
 }
 .container{
     display: flex;
@@ -11,17 +13,97 @@ body {
 }
 h1{
     font-size: 6.5em;
-    margin: 1% 0% -3% 0%;
+    margin: 1% 0% -5% 0%;
     font-family: Nunito, sans-serif;
     -webkit-text-stroke: 2px black;
     color: white;
 }
-p{
+#country_score{
+    margin-left: 50px;
+}
+#score{
     font-size: 4em;
     font-family: Nunito, sans-serif;
     -webkit-text-stroke: 2px black;
     color: white;
-    margin-bottom: -4%;
+    margin-bottom: -6%;
+}
+button{
+    margin-top: 4%;
+    font-size: 25px;
+    background-color: white;
+    padding: 10px 250px 10px 250px;
+    border: none;
+    outline: none;
+}
+.tabs {
+    margin-top: 4%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  }
+.tab{
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+label{
+    word-spacing: 1cm;
+}
+.tab-label {
+    word-spacing: 50px;
+    display: -webkit-box;
+    color: black;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 1em 3em 1em 3em;
+    background:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tab-label::after {
+    content: "\02C4";
+    margin-left: 10px;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+}
+.tab-content {
+    color: black;
+    background: white;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+}
+input:checked + .tab-label::after {
+    content: "\02C5";
+}
+input:checked ~ .tab-content {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+table{
+    border-collapse: collapse;
+}
+tr.bordered {
+    border-bottom: 1px solid silver;
+    white-space: nowrap;
+}
+tr.bordered>td{
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+}
+tr.bordered>#wide_score{
+    padding-left: 20em;
+}
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
 }
 @media only screen and (max-width: 600px) {
     #popcat1 {
@@ -32,4 +114,22 @@ p{
         font-size: 4.5em;
         margin-bottom: -10%;
     }
+    body{
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    .tabs{
+      margin-top: 1%;
+      font-size: 35px;
+      margin-right: 15%;
+    }
+    .tab-label{
+      white-space: nowrap;
+    }
+    tr.bordered{
+      font-size: 15px;
+    }
+    tr.bordered>#wide_score{
+      padding-left: 10em;
+  }
 }

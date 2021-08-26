@@ -105,18 +105,23 @@ input {
     opacity: 0;
     z-index: -1;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     #popcat1 {
         width: 450px;
-        margin-top: -10%;
+        margin-top: -13%;
     }
     h1{
         font-size: 4.5em;
-        margin-bottom: -10%;
+        margin-bottom: -15%;
+    }
+    img{
+        height: 500px;
+    }
+    html{
+        overflow-y: hidden;
     }
     body{
-      overflow-x: hidden;
-      overflow-y: hidden;
+      overflow:hidden;
     }
     .tabs{
       margin-top: 1%;

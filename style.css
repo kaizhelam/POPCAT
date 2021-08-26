@@ -112,7 +112,7 @@ input {
     }
     h1{
         font-size: 4.5em;
-        margin-bottom: -15%;
+        margin-bottom: -20%;
     }
     img{
         height: 500px;
@@ -124,15 +124,14 @@ input {
       overflow:hidden;
     }
     .tabs{
-      margin-top: 1%;
       font-size: 35px;
-      margin-right: 15%;
+      margin-right: 25%;
     }
     .tab-label{
       white-space: nowrap;
     }
     tr.bordered{
-      font-size: 15px;
+      font-size: 10px;
     }
     tr.bordered>#wide_score{
       padding-left: 10em;

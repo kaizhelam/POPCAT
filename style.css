@@ -129,7 +129,7 @@ input {
     }
     .tabs{
       font-size: 35px;
-      margin-top: 15%;
+      margin-top: 5%;
       margin-right: 25%;
     }
     .tab-label{
@@ -142,8 +142,8 @@ input {
       padding-left: 10em;
     }
     .tab-content{
-        margin-top: 15%;
-        left: 15%;
+        margin-top: 10%;
+        left: 10%;
         overflow-y: scroll;
     }
     .tab-content td{

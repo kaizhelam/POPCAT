@@ -78,12 +78,16 @@ input:checked + .tab-label::after {
     content: "\02C5";
 }
 input:checked ~ .tab-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 63%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 32%;
+    overflow-y:scroll;
+    height: 55%;
     font-size: 20px;
-    padding: 20px;
+    padding: 50px 20px 20px 20px;
     border-radius: 15px;
 }
 table{
@@ -98,7 +102,7 @@ tr.bordered>td{
     padding-bottom: 0.3em;
 }
 tr.bordered>#wide_score{
-    padding-left: 20em;
+    padding-left: 17.2em;
 }
 input {
     position: absolute;

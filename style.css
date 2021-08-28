@@ -85,7 +85,7 @@ input:checked ~ .tab-content {
     position: absolute;
     top: 32%;
     overflow-y:scroll;
-    height: 55%;
+    max-height: 55%;
     font-size: 20px;
     padding: 50px 20px 20px 20px;
     border-radius: 15px;
@@ -129,15 +129,24 @@ input {
     }
     .tabs{
       font-size: 35px;
+      margin-top: 15%;
       margin-right: 25%;
     }
     .tab-label{
       white-space: nowrap;
     }
     tr.bordered{
-      font-size: 10px;
+      font-size: 20px;
     }
     tr.bordered>#wide_score{
       padding-left: 10em;
-  }
+    }
+    .tab-content{
+        margin-top: 15%;
+        left: 15%;
+        overflow-y: scroll;
+    }
+    .tab-content td{
+        font-size: 10px;
+    }
 }

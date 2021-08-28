@@ -4,7 +4,7 @@ var malaysiaScore = document.getElementById('my_score');
 var score = 0;
 var MyScore = 10000;
 var audio = new Audio('pop.mp3');
-var hk_score = 1000, tw_score = 430, th_score = 200, jp_score = 150, fi_score = 250, se_score = 100, pl_score = 500, dm_score = 280, id_score=590, hu_score=319; 
+var hk_score = 1000, tw_score = 430, th_score = 200, jp_score = 150, fi_score = 250, se_score = 100, pl_score = 500, dm_score = 280, id_score=590, hu_score=319, sr_score = 300; 
 
 // mouseclick event
 img.addEventListener("mousedown", function(){
@@ -32,7 +32,7 @@ img.addEventListener("touchmove", function(){
 
 
 // Score on leaderboard
-setInterval(startCountHk, 10);
+setInterval(startCountHk, 1);
 
 function startCountHk(){
     hk_score++;
@@ -102,6 +102,13 @@ function startCountHu(){
     document.getElementById("table").rows[11].cells.item(3).innerHTML = hu_score;
 }
 
+setInterval(startCountSr, 5);
+
+function startCountSr(){
+    sr_score++;
+    document.getElementById("table").rows[12].cells.item(3).innerHTML = sr_score;
+}
+
 function increaseScore(){
     score++;
     MyScore++;
@@ -109,18 +116,3 @@ function increaseScore(){
     malaysiaScore.innerHTML = MyScore;
     document.getElementById("table").rows[5].cells.item(3).innerHTML = MyScore;
 }
-
-// function Score(){
-//     let array = [];
-//     let n1 = document.getElementById('table').rows.length;
-
-//     for(let i=1; i<n1; i++){
-//         let n2 = document.getElementById("table").rows[i].cells.length;
-//         for(let j=3; j<n2; j++){
-//             var x = parseInt(document.getElementById("table").rows[i].cells.item(j).innerHTML);
-//             array.push(x);
-//         }
-//     }
-//     console.log(array);
-//     document.getElementById("table").rows[1].cells.item(3).innerHTML = 50;
-// }
